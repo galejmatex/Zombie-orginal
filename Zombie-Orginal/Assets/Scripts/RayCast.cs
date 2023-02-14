@@ -9,11 +9,13 @@ public class RayCast : MonoBehaviour
     {
        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hitinfo, 20f ))
         {
-            Debug.Log("Hit Somthing");{
+            Debug.Log("Hit Somthing");
         }
-    }
+
         else
         {
             Debug.Log("Hit Nothing");
         }
+    }   
+        
 }
